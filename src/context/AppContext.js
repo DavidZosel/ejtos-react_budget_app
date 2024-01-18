@@ -25,7 +25,7 @@ export const AppReducer = (state, action) => {
                     ...state,
                 };
             } else {
-                alert("Cannot increase the allocation! Out of funds");
+                alert("Bitte erhöhen Sie die Zuteilung nicht! Kein Geld mehr vorhanden");
                 return {
                     ...state
                 }
@@ -80,13 +80,13 @@ export const AppReducer = (state, action) => {
 const initialState = {
     budget: 2000,
     expenses: [
-        { id: "Marketing", name: 'Marketing', cost: 50 },
-        { id: "Finance", name: 'Finance', cost: 300 },
-        { id: "Sales", name: 'Sales', cost: 70 },
-        { id: "Human Resource", name: 'Human Resource', cost: 40 },
-        { id: "IT", name: 'IT', cost: 500 },
+        { id: "Marketing", name: 'Miete', cost: 50 },
+        { id: "Finance", name: 'Lebensmittel', cost: 300 },
+        { id: "Sales", name: 'Sparen', cost: 70 },
+        { id: "Human Resource", name: 'Spaß', cost: 40 },
+        { id: "IT", name: 'Weiterbildung', cost: 500 },
     ],
-    currency: '£'
+    currency: '€'
 };
 
 // 2. Creates the context this is the thing our components import and use to get the state
